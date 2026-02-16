@@ -124,7 +124,7 @@ export async function playGuessTheOutput(selectedTech: string): Promise<PostGame
       const userGuess = await getUserGuess();
       
       // Evaluate with Copilot
-   terminal.writeLine("🤖 AI is evaluating your answer...");
+   terminal.writeLine("🤖 AI is evaluating your guess...");
       const evaluation = await evaluateGuess(copilot, challenge, userGuess);
       
       

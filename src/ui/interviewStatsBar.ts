@@ -17,4 +17,5 @@ const spaceBetween: number = Math.max(0, terminal.getContentWidth() - contentWid
 terminal.writeLine(`${level}${" ".repeat(spaceBetween)}${progess}`);
 terminal.writeLine('\n');
 terminal.writeLine(themeBgColor(technology));
+terminal.writeLine('\n');
 }
