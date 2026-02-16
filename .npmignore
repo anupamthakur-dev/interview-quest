@@ -1,0 +1,56 @@
+# Source files (we publish only dist/)
+src/
+bin/
+tsconfig.json
+
+# Development files
+*.md
+!README.md
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test files
+test/
+*.test.ts
+*.spec.ts
+
+# Documentation (keep only README)
+ARROW_KEY_DEMO.md
+ARROW_KEY_MENU.md
+CHANGES.md
+COPILOT_JSON_FIX.md
+DEBUG_POST_GAME_MENU.md
+FINAL_SUMMARY.md
+GUESS_OUTPUT_MODE.md
+IMPLEMENTATION_SUMMARY.md
+MENU_EDITOR_IMPROVEMENTS.md
+POST_GAME_MENU.md
+QUICK_REFERENCE.md
+RESIZE_EXAMPLE.md
+RESIZE_IMPLEMENTATION.md
+prompt.txt
+
+# Git
+.git/
+.gitignore
+.github/
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+
+# Environment
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

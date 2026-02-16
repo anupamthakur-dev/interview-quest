@@ -1,0 +1,65 @@
+{
+  "name": "interviewquest",
+  "version": "1.0.0",
+  "description": "A gamified terminal-based interview simulator for developers. Practice coding interviews with AI-powered evaluation and instant feedback.",
+  "main": "dist/app/index.js",
+  "bin": {
+    "interviewquest": "./dist/bin/interviewquest.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/bin/interviewquest.js",
+    "dev": "tsc && node dist/bin/interviewquest.js",
+    "prepublishOnly": "npm run build",
+    "verify": "node verify-publish.js",
+    "lint": "echo \"No lint configured\"",
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [
+    "cli",
+    "interview",
+    "developer",
+    "terminal",
+    "game",
+    "coding-interview",
+    "practice",
+    "technical-interview",
+    "leetcode",
+    "programming",
+    "learning",
+    "interactive",
+    "command-line",
+    "terminal-game",
+    "developer-tools"
+  ],
+  "author": {
+    "name": "Anupam Kumar",
+    "email": "anupamthakur058@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/interviewquest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/interviewquest/issues"
+  },
+  "homepage": "https://github.com/yourusername/interviewquest#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "chalk": "^4.1.2",
+    "figlet": "^1.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

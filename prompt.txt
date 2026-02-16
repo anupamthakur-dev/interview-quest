@@ -1,0 +1,165 @@
+You are helping me build a production-quality CLI application called InterviewQuest.
+
+InterviewQuest is a gamified interview simulator for developers, built entirely for the terminal.
+It is not a chatbot. It is a state-driven game with interview realism.
+
+🔨 Tech Stack & Constraints
+
+- Language: TypeScript
+- Runtime: Node.js
+- Interface: CLI / TUI only
+- Architecture: Modular, scalable
+- Style: Clean, professional, judge-friendly
+- No UI frameworks that hide logic
+- No unnecessary abstractions
+
+Copilot is used only for evaluation and question generation, not for UI.
+
+
+📂 Project Structure (STRICT)
+
+Follow this folder structure exactly:
+
+bin/
+  interviewquest.ts
+
+src/
+  app/
+    index.ts
+    config.ts
+    environment.ts
+
+  ui/
+    screen.ts
+    banner.ts
+    menu.ts
+    prompt.ts
+    timer.ts
+
+  game/
+    engine.ts
+    state.ts
+    modes.ts
+    round.ts
+    scoring.ts
+    difficulty.ts
+
+  questions/
+    index.ts
+    categories.ts
+    loader.ts
+    bank/
+      javascript.ts
+      typescript.ts
+      dsa.ts
+      system.ts
+
+  evaluation/
+    evaluator.ts
+    rubric.ts
+    feedback.ts
+    copilot.ts
+
+  auth/
+    github.ts
+    session.ts
+
+  utils/
+    delay.ts
+    format.ts
+    logger.ts
+    constants.ts
+
+  types/
+    game.ts
+    question.ts
+    evaluation.ts
+    user.ts
+
+🎮 Core App Behavior
+On launch:
+
+Clear the terminal
+
+Render a minimal ASCII banner
+
+Show a menu with:
+
+Quick Quest
+
+Interview Mode
+
+Practice Grounds
+
+Exit
+
+Game loop:
+
+Each session has rounds
+
+Each round has:
+
+Category
+
+Timer
+
+Question
+
+User input
+
+Evaluation
+
+Score update
+
+Feedback
+
+Gamification rules:
+
+XP per correct concept
+
+Accuracy percentage
+
+Difficulty adapts based on performance
+
+No “pass/fail”, only performance curves
+
+🤖 GitHub Copilot Usage Rules
+
+Copilot is accessed only inside:
+
+src/evaluation/copilot.ts
+
+
+Use gh copilot CLI commands where needed
+
+Copilot evaluates user answers, not generates UI text
+
+App must still work without Copilot (Quick Quest mode)
+
+🧠 Coding Guidelines
+
+Strong typing everywhere
+
+Explicit interfaces in /types
+
+Async logic must be readable
+
+Prefer clarity over cleverness
+
+Each file should be independently understandable
+
+Add short comments only where intent is non-obvious
+
+🧩 What to Generate First
+
+Start by implementing only:
+
+bin/interviewquest.ts
+
+src/app/index.ts
+
+Minimal wiring so interviewquest runs and shows the opening menu
+
+Do not implement scoring, Copilot, or questions yet.
+
+Stop after the app boots and menu renders successfully.
