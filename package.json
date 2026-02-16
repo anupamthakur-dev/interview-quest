@@ -10,7 +10,9 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/bin/interviewquest.js",
+    "start:ai": "npm run build && node dist/bin/interviewquest.js --ai",
     "dev": "tsc && node dist/bin/interviewquest.js",
+    "dev:ai": "tsc && node dist/bin/interviewquest.js --ai",
     "prepublishOnly": "npm run build",
     "verify": "node verify-publish.js",
     "lint": "echo \"No lint configured\"",
@@ -39,12 +41,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/interviewquest.git"
+    "url": "https://github.com/anupamthakur-dev/interview-quest.git"
   },
   "bugs": {
     "url": "https://github.com/yourusername/interviewquest/issues"
   },
-  "homepage": "https://github.com/yourusername/interviewquest#readme",
+  "homepage": "https://github.com/anupamthakur-dev/interviewquest#readme",
   "license": "MIT",
   "engines": {
     "node": ">=18"
